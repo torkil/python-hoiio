@@ -48,7 +48,7 @@ appid = 'YOUR_APPID_HERE'
 token = 'YOUR_TOKEN_HERE'
 client = HoiioRestClient(appid, token)
 
-resp = client.voice.call(params={ dest:'+6512345678', dest2:'+6554326547', caller_id:'Mickey Cheong' })
+resp = client.voice.call(params={ "dest":'+6512345678', "dest2":'+6554326547', "caller_id":'Mickey Cheong' })
 ```
 
 
@@ -61,7 +61,7 @@ appid = 'YOUR_APPID_HERE'
 token = 'YOUR_TOKEN_HERE'
 client = HoiioRestClient(appid, token)
 
-resp = client.sms.send({ dest:'+6565123476', message:'Hello, Mickey' })
+resp = client.sms.send({ "dest":'+6565123476', "msg":'Hello, Mickey' })
 ```
 
 ### Subcribe a number
